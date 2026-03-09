@@ -110,15 +110,104 @@ body {
 
 /* ── Not Found ── */
 .not-found {
-  text-align: center; padding: 120px 20px;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+  animation: fadeUp 0.8s ease-out;
+  position: relative;
+  overflow: hidden;
 }
+
+.not-found-glare {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(99,102,241,0.15) 0%, transparent 70%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.not-found-content {
+  position: relative;
+  z-index: 1;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 24px;
+  padding: 60px 40px;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+  max-width: 500px;
+  width: 100%;
+}
+
 .not-found h1 {
-  font-size: 72px; font-weight: 800; color: #334155; margin-bottom: 8px;
+  font-size: 120px;
+  font-weight: 900;
+  background: linear-gradient(135deg, #A5B4FC, #6366F1, #8B5CF6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 16px;
+  line-height: 1;
+  text-shadow: 0 10px 30px rgba(99,102,241,0.2);
+  letter-spacing: -4px;
 }
+
+.not-found h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #F8FAFC;
+  margin-bottom: 12px;
+}
+
 .not-found p {
-  font-size: 18px; color: #64748B; margin-bottom: 24px;
+  font-size: 16px;
+  color: #94A3B8;
+  margin-bottom: 36px;
+  line-height: 1.6;
 }
+
 .not-found a {
-  color: #818CF8; text-decoration: none; font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 32px;
+  background: linear-gradient(135deg, #6366F1, #8B5CF6);
+  color: #FFF;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  border-radius: 12px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 10px 20px rgba(99,102,241,0.25);
 }
-.not-found a:hover { text-decoration: underline; }
+
+.not-found a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 25px rgba(99,102,241,0.35);
+  background: linear-gradient(135deg, #818CF8, #A78BFA);
+}
+
+.not-found a:active {
+  transform: translateY(1px);
+  box-shadow: 0 5px 10px rgba(99,102,241,0.3);
+}
+
+.not-found-icon {
+  margin-right: 8px;
+  font-size: 18px;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.not-found a:hover .not-found-icon {
+  transform: translateX(-4px);
+}
