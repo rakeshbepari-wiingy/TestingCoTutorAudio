@@ -1,0 +1,85 @@
+const data = {
+  "market-in-seville": {
+    audioUrl: "https://res.cloudinary.com/dkhvsbyv6/video/upload/v1773040899/story_output_prerit_srz6bv.mp3",
+    
+  "transcript": [
+    { "speaker": "Person1", "text": "Buenos días." },
+    { "speaker": "Person2", "text": "¡Buenos días! ¿Qué día es hoy?" },
+    { "speaker": "Person1", "text": "¿Qué día es hoy?" },
+    { "speaker": "Person2", "text": "Hoy es viernes, el quince de marzo." },
+    { "speaker": "Person1", "text": "¡Qué bonitas naranjas! ¿Cuántos euros cuestan estas?" },
+    { "speaker": "Person2", "text": "Esas son cinco euros. ¿Quieres comprar cuántos kilos?" },
+    { "speaker": "Person1", "text": "Mmm, quiero dos kilos. ¿Tienes la fruta hasta las veinte?" },
+    { "speaker": "Person2", "text": "Sí, hasta las veinte. ¿Y tú, qué vendes?" },
+    { "speaker": "Person1", "text": "Me gustan los colores. ¿Qué color es ese melón?" },
+    { "speaker": "Person2", "text": "El melón es verde. ¿Y tu color favorito?" },
+    { "speaker": "Person1", "text": "Mi color favorito es morado. ¡Este pato es muy gordo!" },
+    { "speaker": "Person2", "text": "Jaja, ¡no es un pato, es una calabaza! ¿Es para ti o para alguien más?" },
+    { "speaker": "Person1", "text": "¿Cuándo es tu próxima cita?" },
+    { "speaker": "Person2", "text": "Mi próxima cita es mañana. ¿Y la tuya?" },
+    { "speaker": "Person1", "text": "No tengo una cita. ¿Venden aquí jabón?" },
+    { "speaker": "Person2", "text": "No, aquí no. Pero sí vendemos jamón." },
+    { "speaker": "Person2", "text": "Yo estoy aquí hasta las veinte. Mi cita es a las cinco. ¿Y tú, qué haces?" },
+    { "speaker": "Person1", "text": "Yo estoy leyendo un libro. ¡Qué sorpresa! Mi gemelo es lector." },
+    { "speaker": "Person2", "text": "Interesante. Yo soy vendedor. Gracias por preguntar." },
+    { "speaker": "Person1", "text": "El perro está hambriento, ¿verdad?" },
+    { "speaker": "Person1", "text": "Quiero comprar esto. ¿En qué año estamos?" },
+    { "speaker": "Person2", "text": "Estamos en dos mil veinticuatro. ¿Te gustan los meses de abril o mayo?" },
+    { "speaker": "Person1", "text": "Me gustan más julio. ¿Tú hablas español todos los días?" },
+    { "speaker": "Person2", "text": "Sí, yo hablo español todos los días. Ustedes hablan muy bien." },
+    { "speaker": "Person1", "text": "¡Muchas gracias! ¡Somos amigos ahora!" },
+    { "speaker": "Person2", "text": "¡Claro que sí! ¡Buen día! Quizás adivina el país. ¡Ecuador!" },
+    { "speaker": "Person1", "text": "¡Ecuador! ¡Me encanta! ¡Adiós!" },
+    { "speaker": "Person2", "text": "¡Adiós! ¡Vuelve pronto!" }
+  ],
+  "translated": [
+    { "speaker": "Person1", "text": "Good morning." },
+    { "speaker": "Person2", "text": "Good morning! What day is it today?" },
+    { "speaker": "Person1", "text": "What day is it today?" },
+    { "speaker": "Person2", "text": "Today is Friday, March fifteenth." },
+    { "speaker": "Person1", "text": "What beautiful oranges! How many euros do these cost?" },
+    { "speaker": "Person2", "text": "Those are five euros. How many kilos do you want to buy?" },
+    { "speaker": "Person1", "text": "Hmm, I want two kilos. Do you have fruit until eight?" },
+    { "speaker": "Person2", "text": "Yes, until eight. And you, what do you sell?" },
+    { "speaker": "Person1", "text": "I like the colors. What color is that melon?" },
+    { "speaker": "Person2", "text": "The melon is green. And your favorite color?" },
+    { "speaker": "Person1", "text": "My favorite color is purple. This duck is very fat!" },
+    { "speaker": "Person2", "text": "Haha, it’s not a duck, it’s a pumpkin! Is it for you or for someone else?" },
+    { "speaker": "Person1", "text": "When is your next appointment?" },
+    { "speaker": "Person2", "text": "My next appointment is tomorrow. And yours?" },
+    { "speaker": "Person1", "text": "I don’t have an appointment. Do they sell soap here?" },
+    { "speaker": "Person2", "text": "No, not here. But we do sell ham." },
+    { "speaker": "Person2", "text": "I am here until eight. My appointment is at five. And you, what are you doing?" },
+    { "speaker": "Person1", "text": "I am reading a book. What a surprise! My twin is a reader." },
+    { "speaker": "Person2", "text": "Interesting. I am a vendor. Thanks for asking." },
+    { "speaker": "Person1", "text": "The dog is hungry, right?" },
+    { "speaker": "Person1", "text": "I want to buy this. What year are we in?" },
+    { "speaker": "Person2", "text": "We are in 2024. Do you like the months April or May?" },
+    { "speaker": "Person1", "text": "I like July more. Do you speak Spanish every day?" },
+    { "speaker": "Person2", "text": "Yes, I speak Spanish every day. You speak very well." },
+    { "speaker": "Person1", "text": "Thank you very much! We are friends now!" },
+    { "speaker": "Person2", "text": "Of course! Have a good day! Maybe guess the country. Ecuador!" },
+    { "speaker": "Person1", "text": "Ecuador! I love it! Goodbye!" },
+    { "speaker": "Person2", "text": "Goodbye! Come back soon!" }
+  ]
+  },
+
+
+  "cafe-in-barcelona": {
+    audioUrl: "",
+    transcript: [
+      { speaker: "Person1", text: "Hola, ¿qué tal?" },
+      { speaker: "Person2", text: "Muy bien, gracias. ¿Y tú?" },
+      { speaker: "Person1", text: "Bien también. ¿Me pones un café con leche?" },
+      { speaker: "Person2", text: "Claro, ¿grande o pequeño?" },
+    ],
+    translated: [
+      { speaker: "Person1", text: "Hi, how are you?" },
+      { speaker: "Person2", text: "Very well, thank you. And you?" },
+      { speaker: "Person1", text: "Good too. Can I get a coffee with milk?" },
+      { speaker: "Person2", text: "Sure, large or small?" },
+    ],
+  },
+};
+
+export default data;
