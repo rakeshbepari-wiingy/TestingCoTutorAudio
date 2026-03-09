@@ -56,7 +56,22 @@ body {
   font-size: 13px; font-weight: 700; cursor: pointer; flex-shrink: 0;
   min-width: 48px; text-align: center; transition: all .15s;
 }
+.speed-wrapper { position: relative; flex-shrink: 0; }
 .speed-btn:hover { background: rgba(255,255,255,0.15); }
+.speed-dropdown {
+  position: absolute; bottom: calc(100% + 8px); right: 0;
+  background: #2D3748; border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 10px; padding: 4px; display: flex; flex-direction: column;
+  gap: 2px; min-width: 56px; box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+  z-index: 10;
+}
+.speed-option {
+  padding: 6px 10px; border: none; background: transparent; color: #CBD5E0;
+  font-size: 13px; font-weight: 600; cursor: pointer; border-radius: 6px;
+  text-align: center; transition: all .15s;
+}
+.speed-option:hover { background: rgba(255,255,255,0.1); color: #fff; }
+.speed-option.active { background: rgba(124,58,237,0.3); color: #A78BFA; }
 .progress-area { flex: 1; }
 .progress-bar {
   height: 6px; background: rgba(255,255,255,0.1);
@@ -93,6 +108,13 @@ body {
   background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.12);
 }
 .card-header { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+.translate-btn {
+  margin-left: auto; background: none; border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 8px; padding: 4px 6px; color: rgba(255,255,255,0.4);
+  cursor: pointer; transition: all .2s; display: flex; align-items: center;
+}
+.translate-btn:hover { color: rgba(255,255,255,0.8); border-color: rgba(255,255,255,0.25); }
+.translate-btn.active { color: #A78BFA; border-color: rgba(167,139,250,0.4); background: rgba(167,139,250,0.1); }
 .avatar {
   width: 32px; height: 32px; border-radius: 50%;
   display: flex; align-items: center; justify-content: center;

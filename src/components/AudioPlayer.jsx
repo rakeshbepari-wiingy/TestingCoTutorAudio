@@ -42,14 +42,26 @@ export default function AudioPlayer({ audioUrl }) {
       ((e.clientX - rect.left) / bar.offsetWidth) * audioRef.current.duration;
   };
 
-  const SPEEDS = [0.5, 0.75, 1, 1.25, 1.5];
+  const SPEEDS = [0.5, 0.75, 1, 1.25, 1.5, 2];
   const [speed, setSpeed] = useState(1);
+  const [showSpeedMenu, setShowSpeedMenu] = useState(false);
+  const speedRef = useRef(null);
 
-  const cycleSpeed = () => {
-    const nextIndex = (SPEEDS.indexOf(speed) + 1) % SPEEDS.length;
-    const newSpeed = SPEEDS[nextIndex];
+  useEffect(() => {
+    if (!showSpeedMenu) return;
+    const handleClickOutside = (e) => {
+      if (speedRef.current && !speedRef.current.contains(e.target)) {
+        setShowSpeedMenu(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, [showSpeedMenu]);
+
+  const changeSpeed = (newSpeed) => {
     setSpeed(newSpeed);
     audioRef.current.playbackRate = newSpeed;
+    setShowSpeedMenu(false);
   };
 
   const progress = duration ? (currentTime / duration) * 100 : 0;
@@ -78,9 +90,24 @@ export default function AudioPlayer({ audioUrl }) {
             <span>{formatTime(duration)}</span>
           </div>
         </div>
-        <button className="speed-btn" onClick={cycleSpeed}>
-          {speed}x
-        </button>
+        <div className="speed-wrapper" ref={speedRef}>
+          <button className="speed-btn" onClick={() => setShowSpeedMenu(!showSpeedMenu)}>
+            {speed}x
+          </button>
+          {showSpeedMenu && (
+            <div className="speed-dropdown">
+              {SPEEDS.map((s) => (
+                <button
+                  key={s}
+                  className={`speed-option${s === speed ? " active" : ""}`}
+                  onClick={() => changeSpeed(s)}
+                >
+                  {s}x
+                </button>
+              ))}
+            </div>
+          )}
+        </div>
       </div>
       <audio
         ref={audioRef}

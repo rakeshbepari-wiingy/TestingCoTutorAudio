@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function DialogueCard({ speaker, text, translation, color, index, showEnglish }) {
+export default function DialogueCard({ speaker, text, translation, color, index }) {
   const [active, setActive] = useState(false);
 
   return (
@@ -18,11 +18,7 @@ export default function DialogueCard({ speaker, text, translation, color, index,
         </span>
       </div>
       <p className="text-es">{text}</p>
-      {translation && (
-        <p className="text-en" style={{ display: showEnglish ? "" : "none" }}>
-          {translation}
-        </p>
-      )}
+      {translation && <p className="text-en">{translation}</p>}
     </div>
   );
 }
