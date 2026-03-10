@@ -123,7 +123,7 @@ translated: [
   },
 
   "Intro": {
-    audioUrl: "https://res.cloudinary.com/dkhvsbyv6/video/upload/v1773064967/vanessa_lynne_ttbv12.mp3",
+    audioUrl: "https://res.cloudinary.com/dkhvsbyv6/video/upload/v1773122234/rohan_but6ie.mp3",
     
   "transcript": [
     { "speaker": "Person1", "text": "¡Hola! ¿Cómo estás?" },
