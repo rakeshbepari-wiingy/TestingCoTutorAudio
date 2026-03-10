@@ -121,6 +121,66 @@ translated: [
   { speaker: "Person1", text: "Likewise. Thanks for everything!" }
 ],
   },
+
+  "Intro": {
+    audioUrl: "https://res.cloudinary.com/dkhvsbyv6/video/upload/v1773064967/vanessa_lynne_ttbv12.mp3",
+    
+  "transcript": [
+    { "speaker": "Person1", "text": "¡Hola! ¿Cómo estás?" },
+    { "speaker": "Person2", "text": "Estoy bien, pero estoy cansado." },
+    { "speaker": "Person1", "text": "¿Cansado? ¿Por qué?" },
+    { "speaker": "Person2", "text": "Las máquinas del gimnasio esta mañana fueron intensas." },
+    { "speaker": "Person1", "text": "Sí, esas máquinas son duras." },
+    { "speaker": "Person2", "text": "Pero quiero nuevos logros con mi entrenamiento." },
+    { "speaker": "Person2", "text": "Mantenerse activo es fundamental para mí." },
+    { "speaker": "Person1", "text": "Eso es un verdadero desafío." },
+    { "speaker": "Person1", "text": "Mi primo empezó a entrenar también." },
+    { "speaker": "Person1", "text": "Y mi prima prefiere correr en los bosques fuera de la ciudad." },
+    { "speaker": "Person2", "text": "¿Los bosques? Me encanta eso de este país." },
+    { "speaker": "Person2", "text": "En Tennessee tenemos bosques también, pero estos se sienten diferentes." },
+    { "speaker": "Person1", "text": "Eso me recuerda algo. ¿Lo que más te gusta de Colombia?" },
+    { "speaker": "Person2", "text": "Lo que más me gusta de Colombia es la gente." },
+    { "speaker": "Person1", "text": "¿Tu familia sigue en Tennessee?" },
+    { "speaker": "Person2", "text": "Sí. Mi abuela está muy activa allí." },
+    { "speaker": "Person1", "text": "Mi abuela también está muy activa, especialmente en Navidad." },
+    { "speaker": "Person2", "text": "¿Celebran diferente aquí?" },
+    { "speaker": "Person1", "text": "Sí, tenemos algo llamado novena." },
+    { "speaker": "Person1", "text": "Las familias se reúnen por nueve noches, comparten regalos y cantan villancicos." },
+    { "speaker": "Person2", "text": "Suena increíble, pero no tengo familia aquí para Navidad." },
+    { "speaker": "Person1", "text": "Entonces ven con nosotros. No es un desafío, solo ven." },
+    { "speaker": "Person2", "text": "Gracias. Soy muy afortunado de tener una amiga como tú." },
+    { "speaker": "Person2", "text": "Lo que más me gusta de este café es el café." },
+    { "speaker": "Person1", "text": "¡El café colombiano es el mejor!" }
+  ],
+  "translated": [
+    { "speaker": "Person1", "text": "Hi! How are you?" },
+    { "speaker": "Person2", "text": "I am well, but I am tired." },
+    { "speaker": "Person1", "text": "Tired? Why?" },
+    { "speaker": "Person2", "text": "The gym machines this morning were intense." },
+    { "speaker": "Person1", "text": "Yes, those machines are tough." },
+    { "speaker": "Person2", "text": "But I want new achievements with my training." },
+    { "speaker": "Person2", "text": "Staying active is fundamental for me." },
+    { "speaker": "Person1", "text": "That is a real challenge." },
+    { "speaker": "Person1", "text": "My male cousin started training too." },
+    { "speaker": "Person1", "text": "And my female cousin prefers running in the forests outside the city." },
+    { "speaker": "Person2", "text": "The forests? I love that about this country." },
+    { "speaker": "Person2", "text": "In Tennessee we have forests too, but these feel different." },
+    { "speaker": "Person1", "text": "That reminds me of something. What do you like most about Colombia?" },
+    { "speaker": "Person2", "text": "What I like most about Colombia is the people." },
+    { "speaker": "Person1", "text": "Your family is still in Tennessee?" },
+    { "speaker": "Person2", "text": "Yes. My grandmother is very active there." },
+    { "speaker": "Person1", "text": "My grandmother is also very active, especially at Christmas." },
+    { "speaker": "Person2", "text": "Do you celebrate differently here?" },
+    { "speaker": "Person1", "text": "Yes, we have something called a novena." },
+    { "speaker": "Person1", "text": "Families gather for nine nights, share gifts, and sing Christmas carols." },
+    { "speaker": "Person2", "text": "That sounds amazing, but I don't have family here for Christmas." },
+    { "speaker": "Person1", "text": "Then come with us. It's not a challenge, just come." },
+    { "speaker": "Person2", "text": "Thank you. I am very lucky to have a friend like you." },
+    { "speaker": "Person2", "text": "What I like most about this café is the coffee." },
+    { "speaker": "Person1", "text": "Colombian coffee is the best!" }
+  ]
+
+  },
 };
 
 export default data;
